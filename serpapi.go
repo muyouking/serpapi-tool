@@ -56,7 +56,7 @@ func PerformSearch(req SearchRequest) (string, error) {
 	}
 	cacheMutex.Unlock()
 
-	fmt.Printf("Raw Result for [%s][%s]:\n%s\n", req.Engine, req.Query, resultStr)
+	//fmt.Printf("Raw Result for [%s][%s]:\n%s\n", req.Engine, req.Query, resultStr)
 
 	return resultStr, nil
 }
